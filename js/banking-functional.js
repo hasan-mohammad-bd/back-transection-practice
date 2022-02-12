@@ -57,6 +57,7 @@ document.getElementById("withdraw-button").addEventListener("click", function(){
     const balanceTotal = balanceAmount();
     if(withdrawValue > 0 && withdrawValue < balanceTotal){
         amountAdding("withdraw-total", withdrawValue);  
+        totalBalanceAmount(withdrawValue, false)
     } else {
         alert("Please put valid amount or You don't have sufficient balance");
 
